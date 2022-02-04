@@ -1,0 +1,39 @@
+[{
+  "id":1,
+  "SellRent":1,
+  "Name":"Akash ka bangla",
+  "Type":"House",
+  "Price":400000,
+  "Image":"prop-2"
+},
+{
+  "id":2,
+  "SellRent":2,
+  "Name":"Basant ki kothi",
+  "Type":"rent",
+  "Price":6969696,
+  "Image":"prop-2"
+},
+{
+  "id":3,
+  "SellRent":2,
+  "Name":"Ayush ka mehal",
+  "Type":"House",
+  "Price":8854000,
+  "Image":"prop-6"
+},
+{
+  "id":4,
+  "SellRent":2,
+  "Name":"Aditya Birla",
+  "Type":"House",
+  "Price":75800,
+  "Image":"prop-4"
+},
+{
+  "id":5,
+  "SellRent":1,
+  "Name":"Aditya Birla",
+  "Type":"House",
+  "Price":45500
+}]
