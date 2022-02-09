@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {Routes, RouterModule} from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {PropertyCardComponent} from './property/property-card/property-card.component';
@@ -12,6 +13,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { HousingService } from './service/housing.service';
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
+import { UserRegisterComponent } from './user/user-register/user-register.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
 
 
 const appRoutes : Routes = [
@@ -19,6 +22,8 @@ const appRoutes : Routes = [
   {path:'rent-property', component:PropertyListComponent},
   {path:'add-property', component:AddPropertyComponent},
   {path:'property-detail/:id', component:PropertyDetailComponent},
+  {path:'user/register', component:UserRegisterComponent},
+  {path:'user/login', component:UserLoginComponent},
   {path:'**', component:PropertyListComponent}
 ]
 
@@ -30,13 +35,17 @@ const appRoutes : Routes = [
     PropertyListComponent,
       NavBarComponent,
       AddPropertyComponent,
-      PropertyDetailComponent
+      PropertyDetailComponent,
+      UserRegisterComponent,
+      UserLoginComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [HousingService],
